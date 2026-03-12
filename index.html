@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConectaCL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-edu">Edu</span><span class="logo-conecta">Conecta</span><span class="logo-cl">CL</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#alianzas">Alianzas Educativas</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#nosotros">Acerca de Nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Escuela destacada del semestre</h1>
+        </div>
+    </section>
+
+    <!-- ========== ESCUELA DESTACADA ========== -->
+    <section class="escuela-destacada" id="alianzas">
+        <div class="container">
+            <h2 class="section-title">Instituto Comercial Blas Cañas</h2>
+
+            <!-- Círculos de características -->
+            <div class="caracteristicas">
+                <div class="caracteristica-item">
+                    <div class="circulo circulo-azul">
+                        <span>Excelencia<br>Académica</span>
+                    </div>
+                </div>
+                <div class="linea-conectora"></div>
+                <div class="caracteristica-item">
+                    <div class="circulo circulo-amarillo">
+                        <span>Mujeres</span>
+                    </div>
+                </div>
+                <div class="linea-conectora"></div>
+                <div class="caracteristica-item">
+                    <div class="circulo circulo-salmon">
+                        <span>Privado</span>
+                    </div>
+                </div>
+                <div class="linea-conectora"></div>
+                <div class="caracteristica-item">
+                    <div class="circulo circulo-azul">
+                        <span>8vo a 4to<br>medio</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Por qué elegirnos -->
+            <div class="por-que-elegirnos">
+                <div class="por-que-imagen">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=500&fit=crop" alt="Estudiantes felices">
+                </div>
+                <div class="por-que-texto">
+                    <h3>¿Por qué elegirnos?</h3>
+                    <p>
+                        El Instituto Comercial Blas Cañas, un faro resplandeciente de
+                        excelencia académica, acoge exclusivamente a mujeres en un
+                        entorno privado de aprendizaje. Nuestro compromiso es cultivar
+                        la grandeza en cada alumna, guiándola a través de un viaje
+                        educativo que va más allá de las estrellas.
+                    </p>
+                    <p>
+                        Situada en un enclave privado, El Instituto Comercial Blas Cañas
+                        ofrece una experiencia educativa única desde octavo hasta
+                        cuarto medio. Nuestro cuerpo docente, apasionado y dedicado,
+                        imparte programas educativos innovadores que desafían y
+                        nutren la mente de nuestras estudiantes.
+                    </p>
+                    <p>
+                        En el Instituto Comercial Blas Cañas, la excelencia académica es
+                        nuestra esencia, y nuestro compromiso con la educación de
+                        mujeres líderes es inquebrantable. Con instalaciones de
+                        vanguardia y un enfoque pedagógico centrado en el desarrollo
+                        integral, cada estudiante es guiada hacia un futuro brillante y
+                        empoderador.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="contacto" id="blog">
+        <div class="contacto-mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4!2d-70.645!3d-33.445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a5b0b0b0b1%3A0x1234567890!2sCarmen+1369%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1700000000000"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="contacto-overlay">
+                <h2 class="contacto-titulo">Contactanos</h2>
+            </div>
+        </div>
+
+        <div class="contacto-contenido">
+            <div class="ubicacion-info">
+                <div class="circulo circulo-amarillo circulo-ubicacion">
+                    <span>Ubicación</span>
+                </div>
+                <p class="direccion-texto">Carmen 1369, Santiago,<br>Región Metropolitana</p>
+            </div>
+
+            <div class="formulario-contacto">
+                <form id="contactForm">
+                    <input type="text" name="nombre" placeholder="Nombre" class="input-salmon" required>
+                    <input type="email" name="correo" placeholder="Correo" class="input-azul" required>
+                    <textarea name="mensaje" placeholder="Mensaje" class="input-amarillo" rows="5" required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ACERCA DE NOSOTROS ========== -->
+    <section class="acerca-nosotros" id="nosotros">
+        <div class="acerca-hero">
+            <div class="acerca-overlay"></div>
+            <div class="acerca-hero-content">
+                <h2>Acerca de Nosotros</h2>
+            </div>
+        </div>
+        <div class="acerca-cards-wrapper">
+            <div class="acerca-cards">
+                <!-- Objetivo -->
+                <div class="acerca-card card-amarilla">
+                    <div class="card-circle"></div>
+                    <h3>Objetivo</h3>
+                    <p>Conectar a padres, tutores y estudiantes con las mejores opciones educativas en Chile, proporcionando una plataforma intuitiva y confiable que simplifique la búsqueda de escuelas, fomente la participación comunitaria y promueva la toma de decisiones informadas para el futuro educativo.</p>
+                </div>
+                <!-- Misión -->
+                <div class="acerca-card card-salmon">
+                    <div class="card-circle"></div>
+                    <h3>Misión</h3>
+                    <p>Facilitar el acceso a una educación de calidad al crear un espacio virtual donde la comunidad educativa pueda explorar, compartir experiencias y descubrir oportunidades formativas. Nos esforzamos por ser un referente en la búsqueda educativa, promoviendo la transparencia, la colaboración y la excelencia en la toma de decisiones educativas.</p>
+                </div>
+                <!-- Visión -->
+                <div class="acerca-card card-azul">
+                    <div class="card-circle"></div>
+                    <h3>Visión</h3>
+                    <p>Ser la principal plataforma en línea en Chile que transforma la experiencia de búsqueda educativa, conectando a las personas con las instituciones educativas más adecuadas para sus necesidades. Buscamos contribuir al desarrollo de una sociedad educada, informada y participativa, donde cada individuo tenga acceso a una educación que potencie su crecimiento personal y profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo">
+                    <span class="logo-edu">Edu</span><span class="logo-conecta">Conecta</span><span class="logo-cl">CL</span>
+                </a>
+            </div>
+
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p>Dirección:<br>146 Calle Rosas,<br>Santiago, RM</p>
+                <p>Teléfono:<br>+123 451 4158</p>
+                <p>Correo Electrónico:<br>info@educonectacl.com</p>
+            </div>
+
+            <div class="footer-enlaces">
+                <h4>Enlaces Rápidos</h4>
+                <div class="enlaces-columnas">
+                    <div class="enlaces-col">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#">Buscar Escuelas</a>
+                        <a href="#">Comunidad</a>
+                        <a href="#nosotros">Acerca de Nosotros</a>
+                    </div>
+                    <div class="enlaces-col">
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-redes">
+                <h4>Redes Sociales</h4>
+                <div class="redes-iconos">
+                    <a href="#" class="red-social whatsapp" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="red-social instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduConectaCL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle menú móvil
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Cerrar menú al hacer click en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Manejo del formulario
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
