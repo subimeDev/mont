@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#inicio" class="nav-active">Inicio</a></li>
                 <li><a href="#alianzas">Alianzas Educativas</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#nosotros">Acerca de Nosotros</a></li>
@@ -30,142 +30,186 @@
         </div>
     </nav>
 
-    <!-- ========== HERO ========== -->
+    <!-- ========== HERO - SECCIÓN PRINCIPAL ========== -->
     <section class="hero" id="inicio">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Escuela destacada del semestre</h1>
+        <div class="hero-container">
+            <div class="hero-titulo">
+                <h1>Conéctate con la Educación a través de EduConectaCL</h1>
+            </div>
+            <div class="hero-info">
+                <p>Descubre EduConectaCL, tu plataforma central para facilitar la búsqueda de escuelas. No solo encontrarás instituciones educativas de manera sencilla, sino que también podrás enriquecer tu experiencia educativa con recursos interactivos, eventos y oportunidades de participación comunitaria. Conéctate con nosotros y haz que la búsqueda de la escuela perfecta sea una experiencia colaborativa y significativa para ti y tus seres queridos.</p>
+                <a href="#alianzas" class="btn-explorar">Haz clic para explorar y potenciar el futuro educativo</a>
+            </div>
         </div>
     </section>
 
-    <!-- ========== ESCUELA DESTACADA ========== -->
-    <section class="escuela-destacada" id="alianzas">
+    <!-- ========== TRES TARJETAS DE SERVICIOS ========== -->
+    <section class="servicios">
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=600&h=800&fit=crop" alt="Escuela de calidad">
+                <div class="servicio-overlay"></div>
+                <h3 class="servicio-texto texto-amarillo">Explora escuelas de calidad</h3>
+            </div>
+            <div class="servicio-card">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=800&fit=crop" alt="Comunidad educativa">
+                <div class="servicio-overlay"></div>
+                <h3 class="servicio-texto texto-salmon">Nuestra comunidad educativa</h3>
+            </div>
+            <div class="servicio-card">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=800&fit=crop" alt="Herramientas de búsqueda">
+                <div class="servicio-overlay"></div>
+                <h3 class="servicio-texto texto-azul">Herramientas de búsqueda avanzadas</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ESCUELA DESTACADA DEL SEMESTRE ========== -->
+    <section class="escuela-destacada">
         <div class="container">
-            <h2 class="section-title">Instituto Comercial Blas Cañas</h2>
-
-            <!-- Círculos de características -->
-            <div class="caracteristicas">
-                <div class="caracteristica-item">
-                    <div class="circulo circulo-azul">
-                        <span>Excelencia<br>Académica</span>
-                    </div>
-                </div>
-                <div class="linea-conectora"></div>
-                <div class="caracteristica-item">
-                    <div class="circulo circulo-amarillo">
-                        <span>Mujeres</span>
-                    </div>
-                </div>
-                <div class="linea-conectora"></div>
-                <div class="caracteristica-item">
-                    <div class="circulo circulo-salmon">
-                        <span>Privado</span>
-                    </div>
-                </div>
-                <div class="linea-conectora"></div>
-                <div class="caracteristica-item">
-                    <div class="circulo circulo-azul">
-                        <span>8vo a 4to<br>medio</span>
-                    </div>
-                </div>
+            <h2 class="titulo-izquierda">Escuela destacada del semestre</h2>
+            <div class="escuela-imagen-wrapper">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&h=600&fit=crop" alt="Instituto Comercial Blas Cañas">
             </div>
-
-            <!-- Por qué elegirnos -->
-            <div class="por-que-elegirnos">
-                <div class="por-que-imagen">
-                    <img src="img/estudiantes.jpg" alt="Estudiantes corriendo felices">
+            <div class="escuela-info">
+                <div class="escuela-info-texto">
+                    <h3>Instituto Comercial Blas Cañas</h3>
+                    <p>El Instituto Comercial Blas Cañas, un faro resplandeciente de excelencia académica, acoge exclusivamente a mujeres en un entorno</p>
                 </div>
-                <div class="por-que-texto">
-                    <h3>¿Por qué elegirnos?</h3>
-                    <p>
-                        El Instituto Comercial Blas Cañas, un faro resplandeciente de
-                        excelencia académica, acoge exclusivamente a mujeres en un
-                        entorno privado de aprendizaje. Nuestro compromiso es cultivar
-                        la grandeza en cada alumna, guiándola a través de un viaje
-                        educativo que va más allá de las estrellas.
-                    </p>
-                    <p>
-                        Situada en un enclave privado, El Instituto Comercial Blas Cañas
-                        ofrece una experiencia educativa única desde octavo hasta
-                        cuarto medio. Nuestro cuerpo docente, apasionado y dedicado,
-                        imparte programas educativos innovadores que desafían y
-                        nutren la mente de nuestras estudiantes.
-                    </p>
-                    <p>
-                        En el Instituto Comercial Blas Cañas, la excelencia académica es
-                        nuestra esencia, y nuestro compromiso con la educación de
-                        mujeres líderes es inquebrantable. Con instalaciones de
-                        vanguardia y un enfoque pedagógico centrado en el desarrollo
-                        integral, cada estudiante es guiada hacia un futuro brillante y
-                        empoderador.
-                    </p>
+                <a href="#" class="ver-mas">... ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ALIANZAS EDUCATIVAS ========== -->
+    <section class="alianzas" id="alianzas">
+        <div class="container">
+            <h2 class="titulo-izquierda">Alianzas Educativas</h2>
+            <div class="alianzas-grid">
+                <div class="alianza-card">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=500&h=600&fit=crop" alt="Santiago College">
+                    <div class="alianza-overlay"></div>
+                    <a href="#" class="btn-alianza">Haz clic para explorar más</a>
+                </div>
+                <div class="alianza-card">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=500&h=600&fit=crop" alt="Liceo Hermanas de la Providencia">
+                    <div class="alianza-overlay"></div>
+                    <h3 class="alianza-nombre">Liceo Hermanas de la Providencia</h3>
+                </div>
+                <div class="alianza-card">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&h=600&fit=crop" alt="Escuela San Andrés">
+                    <div class="alianza-overlay"></div>
+                    <h3 class="alianza-nombre">Escuela San Andrés</h3>
+                </div>
+                <div class="alianza-card">
+                    <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=500&h=600&fit=crop" alt="Colegio Santiago">
+                    <div class="alianza-overlay"></div>
+                    <h3 class="alianza-nombre">Colegio Santiago</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== GALERÍA ESCOLAR ========== -->
-    <section class="galeria-escolar">
-        <div class="galeria-grid">
-            <div class="galeria-item">
-                <img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Biblioteca escolar">
+    <!-- ========== OPINIONES ========== -->
+    <section class="opiniones">
+        <div class="container">
+            <h2 class="titulo-izquierda">Opiniones</h2>
+            <div class="opiniones-carousel-wrapper">
+                <div class="opiniones-carousel" id="opinionesCarousel">
+                    <div class="opinion-card">
+                        <div class="opinion-foto">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face" alt="Ana M.">
+                        </div>
+                        <h4>Ana M.</h4>
+                        <p class="opinion-ciudad">Valparaíso</p>
+                        <p class="opinion-texto">Ha sido una herramienta increíble para encontrar la escuela perfecta para mi hija. La información detallada y las reseñas de otros padres fueron fundamentales para tomar una decisión informada. ¡Una experiencia fantástica!</p>
+                    </div>
+                    <div class="opinion-card">
+                        <div class="opinion-foto">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Javier R.">
+                        </div>
+                        <h4>Javier R.</h4>
+                        <p class="opinion-ciudad">Santiago</p>
+                        <p class="opinion-texto">Estoy realmente impresionado con la facilidad de uso de EduConectaCL. Pude filtrar las escuelas según nuestras necesidades específicas y encontrar la opción ideal para mi hijo. ¡Altamente recomendado!.</p>
+                    </div>
+                    <div class="opinion-card">
+                        <div class="opinion-foto">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=face" alt="Carla S.">
+                        </div>
+                        <h4>Carla S.</h4>
+                        <p class="opinion-ciudad">Concepción</p>
+                        <p class="opinion-texto">La comunidad en EduConectaCL nos brindó valiosas perspectivas. Pudimos conectarnos con otros padres que ya tenían experiencia en las escuelas que estábamos considerando. ¡Una plataforma realmente colaborativa!</p>
+                    </div>
+                    <div class="opinion-card">
+                        <div class="opinion-foto">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face" alt="Felipe G.">
+                        </div>
+                        <h4>Felipe G.</h4>
+                        <p class="opinion-ciudad">La Serena</p>
+                        <p class="opinion-texto">Encontrar la mejor escuela para mis hijos fue tan fácil. La variedad de información detallada hicieron que todo fuera suave y libre de estrés. ¡Gracias EduConectaCL!</p>
+                    </div>
+                </div>
             </div>
-            <div class="galeria-item">
-                <img src="https://images.pexels.com/photos/8535230/pexels-photo-8535230.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Clase de ciencias">
-            </div>
-            <div class="galeria-item">
-                <img src="https://images.pexels.com/photos/8617981/pexels-photo-8617981.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Estudiantes en clase">
-            </div>
-            <div class="galeria-item">
-                <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Profesor enseñando">
-            </div>
-            <div class="galeria-item">
-                <img src="https://images.pexels.com/photos/8613312/pexels-photo-8613312.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Niñas dibujando">
-            </div>
-            <div class="galeria-item">
-                <img src="https://images.pexels.com/photos/8613165/pexels-photo-8613165.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Profesor con estudiantes">
-            </div>
-            <div class="galeria-item">
-                <img src="https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tutoría personalizada">
-            </div>
-            <div class="galeria-item">
-                <img src="https://images.pexels.com/photos/8363036/pexels-photo-8363036.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Profesor ayudando alumnas">
+            <div class="carousel-nav">
+                <button class="carousel-btn" id="prevBtn" aria-label="Anterior">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="carousel-btn" id="nextBtn" aria-label="Siguiente">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- ========== CONTACTO ========== -->
-    <section class="contacto" id="blog">
-        <div class="contacto-mapa">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4!2d-70.645!3d-33.445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a5b0b0b0b1%3A0x1234567890!2sCarmen+1369%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1700000000000"
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <div class="contacto-overlay">
-                <h2 class="contacto-titulo">Contactanos</h2>
+    <!-- ========== BLOG ========== -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="titulo-izquierda">Blog</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=700&fit=crop" alt="Blog 1">
+                    <div class="blog-overlay"></div>
+                    <div class="blog-contenido">
+                        <h3>Revolutionizando el Aprendizaje: La Innovadora Asociación de EduConectaCL con la Realidad Virtual en la Educación"</h3>
+                        <a href="#" class="btn-blog btn-blog-salmon">Haz clic para explorar más</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=700&fit=crop" alt="Blog 2">
+                    <div class="blog-overlay"></div>
+                    <div class="blog-contenido">
+                        <h3>Conversaciones Educativas: Entrevistas Exclusivas con Directores de Escuelas Emblemáticas</h3>
+                        <a href="#" class="btn-blog btn-blog-naranja">Haz clic para explorar más</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&h=700&fit=crop" alt="Blog 3">
+                    <div class="blog-overlay"></div>
+                    <div class="blog-contenido">
+                        <h3>Explorando Nuevos Horizontes: Programas Educativos Innovadores en Chile</h3>
+                        <a href="#" class="btn-blog btn-blog-azul">Haz clic para explorar más</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&h=700&fit=crop" alt="Blog 4">
+                    <div class="blog-overlay"></div>
+                    <div class="blog-contenido">
+                        <h3>Cambiando Vidas a Través de la Educación: Historias Inspiradoras de Estudiantes y Graduados</h3>
+                        <a href="#" class="btn-blog btn-blog-amarillo">Haz clic para explorar más</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="contacto-contenido">
-            <div class="ubicacion-info">
-                <div class="circulo circulo-amarillo circulo-ubicacion">
-                    <span>Ubicación</span>
-                </div>
-                <p class="direccion-texto">Carmen 1369, Santiago,<br>Región Metropolitana</p>
-            </div>
-
-            <div class="formulario-contacto">
-                <form id="contactForm">
-                    <input type="text" name="nombre" placeholder="Nombre" class="input-salmon" required>
-                    <input type="email" name="correo" placeholder="Correo" class="input-azul" required>
-                    <textarea name="mensaje" placeholder="Mensaje" class="input-amarillo" rows="5" required></textarea>
-                    <button type="submit" class="btn-enviar">Enviar</button>
-                </form>
+    <!-- ========== ÚNETE A NUESTRA COMUNIDAD ========== -->
+    <section class="comunidad">
+        <div class="comunidad-contenido">
+            <h2>Unete a Nuestra Comunidad</h2>
+            <p>Únete a nuestra comunidad en línea, donde padres, tutores y estudiantes comparten experiencias, consejos y recomendaciones. Creemos en la fuerza de la colaboración y en apoyarnos mutuamente en la búsqueda de la mejor educación.</p>
+            <div class="comunidad-form">
+                <input type="email" placeholder="Tu correo electrónico" id="emailSuscripcion">
+                <button type="button" id="btnSuscribirse">Suscribirse</button>
             </div>
         </div>
     </section>
@@ -180,24 +224,50 @@
         </div>
         <div class="acerca-cards-wrapper">
             <div class="acerca-cards">
-                <!-- Objetivo -->
                 <div class="acerca-card card-amarilla">
                     <div class="card-circle"></div>
                     <h3>Objetivo</h3>
                     <p>Conectar a padres, tutores y estudiantes con las mejores opciones educativas en Chile, proporcionando una plataforma intuitiva y confiable que simplifique la búsqueda de escuelas, fomente la participación comunitaria y promueva la toma de decisiones informadas para el futuro educativo.</p>
                 </div>
-                <!-- Misión -->
                 <div class="acerca-card card-salmon">
                     <div class="card-circle"></div>
                     <h3>Misión</h3>
                     <p>Facilitar el acceso a una educación de calidad al crear un espacio virtual donde la comunidad educativa pueda explorar, compartir experiencias y descubrir oportunidades formativas. Nos esforzamos por ser un referente en la búsqueda educativa, promoviendo la transparencia, la colaboración y la excelencia en la toma de decisiones educativas.</p>
                 </div>
-                <!-- Visión -->
                 <div class="acerca-card card-azul">
                     <div class="card-circle"></div>
                     <h3>Visión</h3>
                     <p>Ser la principal plataforma en línea en Chile que transforma la experiencia de búsqueda educativa, conectando a las personas con las instituciones educativas más adecuadas para sus necesidades. Buscamos contribuir al desarrollo de una sociedad educada, informada y participativa, donde cada individuo tenga acceso a una educación que potencie su crecimiento personal y profesional.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="contacto">
+        <div class="contacto-mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4!2d-70.645!3d-33.445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a5b0b0b0b1%3A0x1234567890!2sCarmen+1369%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1700000000000"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacto-overlay-map">
+                <h2 class="contacto-titulo">Contactanos</h2>
+            </div>
+        </div>
+        <div class="contacto-contenido">
+            <div class="ubicacion-info">
+                <div class="circulo circulo-amarillo circulo-ubicacion">
+                    <span>Ubicación</span>
+                </div>
+                <p class="direccion-texto">Carmen 1369, Santiago,<br>Región Metropolitana</p>
+            </div>
+            <div class="formulario-contacto">
+                <form id="contactForm">
+                    <input type="text" name="nombre" placeholder="Nombre" class="input-salmon" required>
+                    <input type="email" name="correo" placeholder="Correo" class="input-azul" required>
+                    <textarea name="mensaje" placeholder="Mensaje" class="input-amarillo" rows="5" required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
             </div>
         </div>
     </section>
@@ -210,14 +280,12 @@
                     <span class="logo-edu">Edu</span><span class="logo-conecta">Conecta</span><span class="logo-cl">CL</span>
                 </a>
             </div>
-
             <div class="footer-contacto">
                 <h4>Contacto</h4>
                 <p>Dirección:<br>146 Calle Rosas,<br>Santiago, RM</p>
                 <p>Teléfono:<br>+123 451 4158</p>
                 <p>Correo Electrónico:<br>info@educonectacl.com</p>
             </div>
-
             <div class="footer-enlaces">
                 <h4>Enlaces Rápidos</h4>
                 <div class="enlaces-columnas">
@@ -233,23 +301,15 @@
                     </div>
                 </div>
             </div>
-
             <div class="footer-redes">
                 <h4>Redes Sociales</h4>
                 <div class="redes-iconos">
-                    <a href="#" class="red-social whatsapp" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="#" class="red-social facebook" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="red-social instagram" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                    <a href="#" class="red-social whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="red-social facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="red-social instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>&copy; 2024 EduConectaCL. Todos los derechos reservados.</p>
         </div>
@@ -259,13 +319,10 @@
         // Toggle menú móvil
         const navToggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
-
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
-
-        // Cerrar menú al hacer click en un enlace
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -273,11 +330,33 @@
             });
         });
 
-        // Manejo del formulario
+        // Formulario contacto
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
+            alert('¡Mensaje enviado con éxito!');
             this.reset();
+        });
+
+        // Suscripción
+        document.getElementById('btnSuscribirse').addEventListener('click', function() {
+            const email = document.getElementById('emailSuscripcion').value;
+            if (email) {
+                alert('¡Te has suscrito exitosamente con: ' + email);
+                document.getElementById('emailSuscripcion').value = '';
+            }
+        });
+
+        // Carousel de opiniones
+        const carousel = document.getElementById('opinionesCarousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const cardWidth = 300;
+
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        });
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
         });
     </script>
 
